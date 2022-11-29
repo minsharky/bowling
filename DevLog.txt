@@ -54,3 +54,4 @@ Lose conditions
 Timer that caps how long the user can play
 Powerups
 Powerdowns
+Implemented "r" reset button.

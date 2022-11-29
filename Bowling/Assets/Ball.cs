@@ -8,8 +8,9 @@ public class Ball : MonoBehaviour
     Rigidbody BallRB;
     private bool launched;
     private int maxRot = 10;
-    public int rotSpeed = 1;
-    public int ballForce = 100;
+    public float rotSpeed = 0.5f;
+    public int shiftSpeed = 10;
+    public int ballForce = 500;
 
     // Start is called before the first frame update
     void Start()
@@ -21,30 +22,47 @@ public class Ball : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        //Use left/right arrows to angle ball left/right
+        //inputs and stuff:
+        bool leftArrow = Input.GetKey(KeyCode.LeftArrow);
+        bool rightArrow = Input.GetKey(KeyCode.RightArrow);
+        bool leftA = Input.GetKey("a");
+        bool rightD = Input.GetKey("d");
+        bool space = Input.GetKey(KeyCode.Space);
         //Xlocal = transform.right;
         //Ylocal = transform.up;
         //Zlocal = transform.forward;
 
+        //Ball aiming only allowed if not already launched
         if (!launched)
         {
-            bool left = Input.GetKeyDown(KeyCode.LeftArrow);
-            bool right = Input.GetKeyDown(KeyCode.RightArrow);
-            if (left)
+            //Use left/right arrows to angle ball left/right
+            if (leftArrow && transform.rotation.y < maxRot)
             {
-                BallRB.MoveRotation(Quaternion.Euler(0, -rotSpeed * maxRot, 0));
+                //BallRB.MoveRotation(Quaternion.Euler(0, -rotSpeed * maxRot * Time.deltaTime, 0));
+                transform.Rotate(new Vector3(0, -rotSpeed * maxRot * Time.deltaTime, 0));
             }
-            if (right)
+            if (rightArrow && transform.rotation.y > -maxRot)
             {
-                BallRB.MoveRotation(Quaternion.Euler(0, rotSpeed * maxRot, 0));
+                //BallRB.MoveRotation(Quaternion.Euler(0, rotSpeed * maxRot * Time.deltaTime, 0));
+                transform.Rotate(new Vector3(0, rotSpeed * maxRot * Time.deltaTime, 0));
+            }
+            //use A/D to shift ball left/right
+            if (leftA)
+            {
+                transform.Translate(new Vector3(-shiftSpeed * Time.deltaTime, 0, 0), Space.World);
+            }
+            if (rightD)
+            {
+                transform.Translate(new Vector3(shiftSpeed * Time.deltaTime, 0, 0), Space.World);
+            }
+            //use spacebar to launch ball forward
+            if (space)
+            {
+                launched = true;
+                BallRB.AddForce(transform.forward * ballForce);
             }
         }
 
-        //use spacebar to launch ball forward
-        if (Input.GetKey(KeyCode.Space))
-        {
-            launched = true;
-            BallRB.AddForce(transform.forward * ballForce);
-        }
+
     }
 }

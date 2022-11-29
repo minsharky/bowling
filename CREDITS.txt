@@ -1,3 +1,4 @@
 Credits
 Reference for basic 3D game programming: "How to Make a Simple Game in Unity 3D" by jschap on instructables.com (https://www.instructables.com/How-to-make-a-simple-game-in-Unity-3D/)
 Reference for .gitignore: Jack Burkhardt in the CS 376 Fall 22 Discord (Only 376 students or instructors will be able to access the following link: https://discord.com/channels/1020465561538408508/1020465561538408516/1047179794430824518)
+Reference for Scene Reload: AngryBlox PlayerControl.cs file

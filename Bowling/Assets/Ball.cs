@@ -36,16 +36,22 @@ public class Ball : MonoBehaviour
         if (!launched)
         {
             //Use left/right arrows to angle ball left/right
-            if (leftArrow && transform.rotation.y < maxRot)
+            if (leftArrow)
             {
                 //BallRB.MoveRotation(Quaternion.Euler(0, -rotSpeed * maxRot * Time.deltaTime, 0));
                 transform.Rotate(new Vector3(0, -rotSpeed * maxRot * Time.deltaTime, 0));
+
+                //transform.eulerAngles.Set(transform.eulerAngles.x, transform.eulerAngles.y + (-rotSpeed * Time.deltaTime), transform.eulerAngles.z);
             }
-            if (rightArrow && transform.rotation.y > -maxRot)
+            if (rightArrow)
             {
                 //BallRB.MoveRotation(Quaternion.Euler(0, rotSpeed * maxRot * Time.deltaTime, 0));
                 transform.Rotate(new Vector3(0, rotSpeed * maxRot * Time.deltaTime, 0));
+                //transform.eulerAngles.Set(transform.eulerAngles.x, transform.eulerAngles.y + (rotSpeed * Time.deltaTime), transform.eulerAngles.z);
             }
+            //transform.rotation = Quaternion.Euler(transform.rotation.x,
+            //                                      Mathf.Clamp(transform.eulerAngles.y, -maxRot, maxRot),
+            //                                      transform.rotation.z);
             //use A/D to shift ball left/right
             if (leftA)
             {

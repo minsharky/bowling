@@ -7,4 +7,10 @@ Ideas:
 - 2D Mario-like game
 - 3D Bowling
 - 3D FPS (First Person Shooter)
+How to meet implementation requirements: powerup mechanic
 
+11/29
+Met at Starbucks. Akash was two hours late.
+Discussion to finalize project idea:
+- Consensus on doing a 3D game for the 25 point criterium
+Potential bo

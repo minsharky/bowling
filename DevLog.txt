@@ -13,4 +13,12 @@ How to meet implementation requirements: powerup mechanic
 Met at Starbucks. Akash was two hours late.
 Discussion to finalize project idea:
 - Consensus on doing a 3D game for the 25 point criterium
-Potential bo
+Potential bowling game:
+- Basic objects: Bowling ball, alley, pin(s), scoreboard, gutters
+- Extras: powerup item, bumpers
+  - Powerup items: speed, mass increase, move the ball closer to the pins, pin size up, bumper activate, score multiplier
+- player controlls the bowling ball; it rolls along the alley to hit the pins
+- if the ball collides with a powerup object, it gets a respective boost
+- if the ball enters/collides with the gutter, lose condition
+- if the ball hits a pin, score increase
+- simplified rules; initially we will not attempt to implement all rules of real-life bowling

@@ -14,7 +14,7 @@ Met at Starbucks. Akash was two hours late.
 Discussion to finalize project idea:
 - Consensus on doing a 3D game for the 25 point criterium
 Potential bowling game:
-- Basic objects: Bowling ball, alley, pin(s), scoreboard, gutters
+- Basic objects: Bowling ball, alley, pin(s), scoreboard (screen text), gutters
 - Extras: powerup item, bumpers
   - Powerup items: speed, mass increase, move the ball closer to the pins, pin size up, bumper activate, score multiplier
 - player controlls the bowling ball; it rolls along the alley to hit the pins

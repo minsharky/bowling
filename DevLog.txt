@@ -24,3 +24,33 @@ Potential bowling game:
 - simplified rules; initially we will not attempt to implement all rules of real-life bowling
 Minseo was also late, and David overslept. 
 Made the Devlog into a burn book, Mean Girls Style.
+
+11/29: 11:29 AM
+Minseo had object ideas. Hazards! Hitting it slows you down, or curves the ball in a certain way. 
+
+11/29: 11:32 AM
+We have three aesthetic goals.
+1. Challenge. The game should be challenging to some degree. The user should feel happy when they win, or make a lot of progress in the game. If the game is too hard, or too easy, then it does not meet the challenge aesthetic goal.
+2. Submission. The game should be an entertaining pasttime. For example, the user should be excited to see what the powerups do, and try them all out. The user should enjoy the game, but not find it incredibly challenging or boring. We do not meet this aesthetic goal if the user finds it too difficult to play. 
+3. Sensation. The game should sound realistic, and fun. We don't meet this aesthetic objective if the sounds are annoying. 
+
+11/29: 11:39 AM
+Core Loop:
+Position the ball (change its angle/position relative to the pins)
+Bowl the ball
+(Optional) Hit and activate powerups/powerdowns
+(Optional) Hit pins, and change score
+Repeat
+
+This should be sufficient to generate a challenge and a fun pasttime for the user. 
+
+11/29: 11:44 AM
+Order of operations:
+Basic layout for the game already (Akash put that together)
+Controlling the ball (Rachel is doing that)
+Pin prefab, and adding it to the game (Minseo is doing that)
+Scoring mechanisms
+Lose conditions
+Timer that caps how long the user can play
+Powerups
+Powerdowns

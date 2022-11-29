@@ -24,3 +24,6 @@ Potential bowling game:
 - simplified rules; initially we will not attempt to implement all rules of real-life bowling
 Minseo was also late, and David overslept. 
 Made the Devlog into a burn book, Mean Girls Style.
+
+11/29: 11:29 AM
+Minseo had object ideas. Hazards! Hitting it slows you down, or curves the ball in a certain way. 

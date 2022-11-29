@@ -22,3 +22,5 @@ Potential bowling game:
 - if the ball enters/collides with the gutter, lose condition
 - if the ball hits a pin, score increase
 - simplified rules; initially we will not attempt to implement all rules of real-life bowling
+Minseo was also late, and David overslept. 
+Made the Devlog into a burn book, Mean Girls Style.

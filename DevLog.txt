@@ -59,9 +59,13 @@ Implemented "r" reset button.
 11/29: 1:00 PM
 Minseo created the "pins" prefab.
 
-11/2: 2:27 PM
-
-Amenments to lose and win conditions: 
+12/2: 2:27 PM
+Akash made amendments to lose and win conditions: 
 
 Win condition: If you exceed a certain score in a certain number of rounds, you win.
 Lose condition: If you fail to exceed the score in the number of rounds, you lose. 
+
+12/2: 3:13 PM
+David made AngleArrow work
+
+Created cube that follows rotation/movement of Ball pre-launch and disappears upon launch

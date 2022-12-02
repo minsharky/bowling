@@ -73,8 +73,9 @@ public class Ball : MonoBehaviour
         if (! StillWaitingForPhysicsToSettle())
         {
 
-            launched = false;
             ResetForBowling();
+            launched = false;
+
         }
 
     }

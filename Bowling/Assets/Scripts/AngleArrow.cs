@@ -11,6 +11,7 @@ public class AngleArrow : MonoBehaviour
         ball = transform.parent.gameObject.GetComponent<Ball>();
     }
 
+
     // Update is called once per frame
     void Update()
     {

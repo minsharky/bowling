@@ -12,4 +12,5 @@ public class PowerUp_ScoreMult : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
 }

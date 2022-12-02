@@ -15,6 +15,5 @@ public class Pin : MonoBehaviour
             scored = true;
             Scoreboard.ScorePoints(pointPerPin);
         }
-
     }
 }

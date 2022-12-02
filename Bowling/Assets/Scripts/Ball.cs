@@ -16,6 +16,7 @@ public class Ball : MonoBehaviour
     float resetTime = -1;
     float resetInterval = 15;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -111,6 +112,6 @@ public class Ball : MonoBehaviour
 
     public void ActivateSpeedPowerUp()
     {
-        BallRB.AddForce(new Vector3(0, 0, 5));
+        BallRB.AddForce(new Vector3(0, 0, 2000));
     }
 }

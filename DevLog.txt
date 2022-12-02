@@ -59,3 +59,9 @@ Implemented "r" reset button.
 11/29: 1:00 PM
 Minseo created the "pins" prefab.
 
+11/2: 2:27 PM
+
+Amenments to lose and win conditions: 
+
+Win condition: If you exceed a certain score in a certain number of rounds, you win.
+Lose condition: If you fail to exceed the score in the number of rounds, you lose. 

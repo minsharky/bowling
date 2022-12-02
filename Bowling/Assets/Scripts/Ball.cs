@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
 
 public class Ball : MonoBehaviour
@@ -67,7 +68,23 @@ public class Ball : MonoBehaviour
                 BallRB.AddForce(transform.forward * ballForce);
             }
         }
+    }
 
 
+    bool StillWaitingForPhysicsToSettle()
+    {
+
+        foreach (var obj in FindObjectsOfType<GameObject>())
+        {
+            if (obj.GetComponent<Rigidbody>() == null)
+            {
+                continue;
+            }
+            if (! obj.GetComponent<Rigidbody>().IsSleeping())
+            {
+                return true; 
+            }
+        }
+        return false;
     }
 }

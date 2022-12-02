@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
-    
     Rigidbody BallRB;
     private bool launched;
     private int maxRot = 10;

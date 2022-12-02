@@ -12,6 +12,16 @@ public class Scoreboard : MonoBehaviour
         Singleton.ScorePointsInternal(points);
     }
 
+    public static void GameOver()
+    {
+        Singleton.GameOverInternal();
+    }
+
+    public static void GameWin()
+    {
+        Singleton.GameWinInternal();
+    }
+
     public int Score;
 
     private TMP_Text scoreDisplay;
@@ -29,5 +39,17 @@ public class Scoreboard : MonoBehaviour
     {
         Score += points;
         scoreDisplay.text = "Score: " + Score.ToString();
+    }
+
+    private void GameOverInternal()
+    {
+        Time.timeScale = 0;
+        scoreDisplay.text = "You Lose / OOPS";
+    }
+
+    private void GameWinInternal()
+    {
+        Time.timeScale = 0;
+        scoreDisplay.text = "You Win!";
     }
 }

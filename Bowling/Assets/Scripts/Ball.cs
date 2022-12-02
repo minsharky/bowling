@@ -108,4 +108,9 @@ public class Ball : MonoBehaviour
             Scoreboard.round += 1;
         }
     }
+
+    public void ActivateSpeedPowerUp()
+    {
+        BallRB.AddForce(new Vector3(0, 0, 5));
+    }
 }

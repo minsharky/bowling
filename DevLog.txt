@@ -69,3 +69,6 @@ Lose condition: If you fail to exceed the score in the number of rounds, you los
 David made AngleArrow work
 
 Created cube that follows rotation/movement of Ball pre-launch and disappears upon launch
+
+12/2 4:16 PM
+Minseo wrote the Score Mulitplier Power Up Script and created the Power Up prefab.

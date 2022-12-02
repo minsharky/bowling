@@ -11,7 +11,6 @@ public class Scoreboard : MonoBehaviour
     {
         Singleton.ScorePointsInternal(points);
     }
-
     public static void GameOver()
     {
         Singleton.GameOverInternal();
@@ -23,7 +22,7 @@ public class Scoreboard : MonoBehaviour
     }
 
     public int Score;
-
+    public int GameWinScore; 
     private TMP_Text scoreDisplay;
 
     // Start is called before the first frame update
@@ -31,6 +30,7 @@ public class Scoreboard : MonoBehaviour
     {
         Singleton = this;
         scoreDisplay = GetComponent<TMP_Text>();
+        GameWinScore = 5;
         // Initialize the display
         ScorePointsInternal(0);
     }
@@ -38,7 +38,14 @@ public class Scoreboard : MonoBehaviour
     private void ScorePointsInternal(int points)
     {
         Score += points;
-        scoreDisplay.text = "Score: " + Score.ToString();
+        if (Score >= GameWinScore)
+        {
+            GameWin();
+        }
+        else
+        {
+            scoreDisplay.text = "Score: " + Score.ToString();
+        }
     }
 
     private void GameOverInternal()

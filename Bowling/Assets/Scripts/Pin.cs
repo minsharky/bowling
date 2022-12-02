@@ -6,7 +6,7 @@ public class Pin : MonoBehaviour
 {
     private bool scored = false;
     private float pinThreshold = -3.5f;
-
+    
     // private void OnCollisionEnter(Collision collision)
     // {
     //     if (collision.gameObject.GetComponent<Ball>() != null)

@@ -7,12 +7,12 @@ using UnityEngine.SceneManagement;
 public class Ball : MonoBehaviour
 {
     Rigidbody BallRB;
-    private bool launched;
+    public bool launched;
     private int maxRot = 10;
     public float rotSpeed = 0.5f;
     public int shiftSpeed = 10;
     public int ballForce = 500;
-
+    
     // Start is called before the first frame update
     void Start()
     {

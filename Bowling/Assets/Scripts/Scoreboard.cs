@@ -6,7 +6,7 @@ using UnityEngine;
 public class Scoreboard : MonoBehaviour
 {
     public static Scoreboard Singleton;
-
+    
     public static void ScorePoints(int points)
     {
         Singleton.ScorePointsInternal(points);

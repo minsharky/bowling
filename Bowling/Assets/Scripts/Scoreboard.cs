@@ -21,7 +21,8 @@ public class Scoreboard : MonoBehaviour
         Singleton.GameWinInternal();
     }
 
-    public int Score;
+    private static int Score;
+    public static int round = 0;
     public int GameWinScore; 
     private TMP_Text scoreDisplay;
 
@@ -41,6 +42,10 @@ public class Scoreboard : MonoBehaviour
         if (Score >= GameWinScore)
         {
             GameWin();
+        }
+        else if (round >= 5)
+        {
+            GameOver();
         }
         else
         {

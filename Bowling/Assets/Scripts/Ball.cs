@@ -12,7 +12,10 @@ public class Ball : MonoBehaviour
     public float rotSpeed = 0.5f;
     public int shiftSpeed = 10;
     public int ballForce = 500;
-    
+
+    float resetTime = -1;
+    float resetInterval = 15;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -66,16 +69,15 @@ public class Ball : MonoBehaviour
             if (space)
             {
                 launched = true;
+                resetTime = Time.time + resetInterval;
                 BallRB.AddForce(transform.forward * ballForce);
             }
         }
 
-        if (! StillWaitingForPhysicsToSettle())
+        if (! StillWaitingForPhysicsToSettle() || (resetTime != -1 && Time.time > resetTime))
         {
-
             ResetForBowling();
             launched = false;
-
         }
 
     }
@@ -103,6 +105,7 @@ public class Ball : MonoBehaviour
         if (launched)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            Scoreboard.round += 1;
         }
     }
 }

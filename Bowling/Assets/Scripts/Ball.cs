@@ -8,7 +8,7 @@ public class Ball : MonoBehaviour
 {
     Rigidbody BallRB;
     public bool launched;
-    private int maxRot = 10;
+    private int maxRot = 10;    
     public float rotSpeed = 0.5f;
     public int shiftSpeed = 10;
     public int ballForce = 500;

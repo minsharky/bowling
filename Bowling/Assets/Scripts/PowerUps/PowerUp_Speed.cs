@@ -9,7 +9,7 @@ public class PowerUp_Speed : MonoBehaviour
     private void Start()
     {
         ball = FindObjectOfType<Ball>();
-    }
+    }       
 
     private void OnTriggerEnter(Collider other)
     {

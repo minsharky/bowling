@@ -21,4 +21,6 @@ Project points breakdown:
 - Other:
   - 3D game: 25 points
   
-  TOTAL POINTS: 38
+TOTAL POINTS: 38
+POINT GOAL: 70
+POINTS REMAINING: 32

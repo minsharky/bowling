@@ -1,0 +1,26 @@
+Project points breakdown:
+- Objects:
+  - Pins:
+    - Object appears on screen: 1 point
+    - Object responds to collisions: 1 point
+  - Ball:
+    - Object appears on screen: 1 point
+    - Object moves: 1 point
+    - Object controllable by user: 1 point
+    - Object responds to collisions: 1 point
+  - Barriers:
+    - Object appears on screen: 1 point
+  - Angle arrow:
+    - Object appears on screen: 1 point
+    - Object moves: 1 point
+    - Object controllable by user: 1 point
+- Controls:
+  - Arrow key press: 1 point
+  - Spacebar press: 1 point
+  - A/D press: 1 point
+- Other:
+  - 3D game: 25 points
+  
+TOTAL POINTS: 38
+POINT GOAL: 70
+POINTS REMAINING: 32

@@ -1,16 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Ball : MonoBehaviour
 {
     Rigidbody BallRB;
-    private bool launched;
+    public bool launched;
     private int maxRot = 10;
     public float rotSpeed = 0.5f;
     public int shiftSpeed = 10;
     public int ballForce = 500;
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -68,6 +70,39 @@ public class Ball : MonoBehaviour
             }
         }
 
+        if (! StillWaitingForPhysicsToSettle())
+        {
 
+            ResetForBowling();
+            launched = false;
+
+        }
+
+    }
+
+
+    bool StillWaitingForPhysicsToSettle()
+    {
+
+        foreach (var obj in FindObjectsOfType<GameObject>())
+        {
+            if (obj.GetComponent<Rigidbody>() == null)
+            {
+                continue;
+            }
+            if (! obj.GetComponent<Rigidbody>().IsSleeping())
+            {
+                return true; 
+            }
+        }
+        return false;
+    }
+
+    void ResetForBowling()
+    {
+        if (launched)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 }

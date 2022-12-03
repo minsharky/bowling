@@ -16,8 +16,10 @@ public class Ball : MonoBehaviour
     float resetTime = -1;
     float resetInterval = 15;
 
-    EventHandler eh;
+    public AudioSource ballBowled;
+    public AudioSource barrier;
 
+    EventHandler eh;
 
     // Start is called before the first frame update
     void Start()
@@ -79,6 +81,7 @@ public class Ball : MonoBehaviour
             if (space)
             {
                 launched = true;
+                ballBowled.Play();
                 resetTime = Time.time + resetInterval;
                 BallRB.AddForce(transform.forward * ballForce);
             }
@@ -90,6 +93,13 @@ public class Ball : MonoBehaviour
             launched = false;
         }
 
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Bumper") {
+            barrier.Play();
+        }
     }
 
 

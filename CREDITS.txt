@@ -4,3 +4,15 @@ Reference for .gitignore: Jack Burkhardt in the CS 376 Fall 22 Discord (Only 376
 Reference for Scene Reload: AngryBlox PlayerControl.cs file
 Reference for Scoreboard class: See Akash Deo's Exercise 5 code, or the Dodgeball ScoreKeeper.cs file. 
 Reference for Ball StillWaitingForPhysics method: AngryBlox ProjectileThrower.cs
+References for Audio (All taken from Freesound.org):
+        Bowling Strike: SieuAmThanh
+        Bowling Ball.wav: driftworks
+        Game win.mp3: elijahdanie
+        Good!: syseQ
+        Game Audio - UI SFX: GameAudio
+        Game Menu Achievement: Eponn
+        CONFIRM_SOUND.mp3: ciapaqua
+        Retro You Lose SFX: suntemple
+        Lose Sound: C00lDude
+        Video Game Die or Lose Life: AdamWeeden
+        Hammer falls to wood floor: odditonic

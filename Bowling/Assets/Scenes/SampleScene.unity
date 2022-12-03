@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571336, b: 0.3069219, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -218,7 +218,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &81619228
 GameObject:
@@ -509,7 +509,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &725916543
 GameObject:
@@ -625,7 +625,7 @@ Transform:
   m_Children:
   - {fileID: 81619229}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &725916549
 MonoBehaviour:
@@ -639,10 +639,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed9af2dc12c84a5439c7a29d03ac6f33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  launched: 0
-  rotSpeed: 1
-  shiftSpeed: 10
-  ballForce: 500
 --- !u!1 &842678442
 GameObject:
   m_ObjectHideFlags: 0
@@ -673,7 +669,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreMult: {fileID: 3680334657016453654, guid: 1fd71b0e2e3eebd4382d61621ebc8570, type: 3}
-  speedUp: {fileID: 3680334657016453654, guid: 47620626e20c8e04683769a8c2c501a4, type: 3}
+  speedUp: {fileID: 3680334657016453654, guid: e8b35241477074dd0a74202aa5ca135e, type: 3}
   getBigger: {fileID: 3680334657016453654, guid: 721b110687a979641a2cf832f160858c, type: 3}
   scoreDeMult: {fileID: 3680334657016453654, guid: 7ffeb8635f84454478d4ba0fb8e1550b, type: 3}
   speedDown: {fileID: 3680334657016453654, guid: 407018050ef4741479dfdd79ac0d72b5, type: 3}
@@ -691,7 +687,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &963194225
 GameObject:
@@ -775,7 +771,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1068345119
 PrefabInstance:
@@ -900,7 +896,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1478833864
 GameObject:
@@ -997,7 +993,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1496479089
 GameObject:
@@ -1094,7 +1090,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1641332118
 GameObject:
@@ -1147,7 +1143,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65627b5e4fa36ec4592bb960829d4423, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameWinScore: 0
 --- !u!114 &1641332121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1340,7 +1335,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2067920937
 GameObject:
@@ -1437,5 +1432,5 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

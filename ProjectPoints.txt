@@ -39,6 +39,7 @@ Project points breakdown:
   - Scoreboard: (2 points total)
     - Object appears on screen: 1 point
     - Object changes appearance in response to some event: 1 point
+    - Object changes appearance in response to some event: 1 point
 - Controls: (3 points total)
   - Arrow key press: 1 point
   - Spacebar press: 1 point

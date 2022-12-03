@@ -16,3 +16,5 @@ References for Audio (All taken from Freesound.org):
         Lose Sound: C00lDude
         Video Game Die or Lose Life: AdamWeeden
         Hammer falls to wood floor: odditonic
+Reference for Title Screen: "Creating a Title Menu Screen in Unity" by jamesplusgames (https://www.youtube.com/watch?v=BjEqZfK15Ws)
+Title Screen Background Image: "Bowling alley" by Strollerdos (https://www.flickr.com/photos/87466374@N00/189381756)

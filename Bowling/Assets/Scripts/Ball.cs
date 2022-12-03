@@ -11,7 +11,7 @@ public class Ball : MonoBehaviour
     private int maxRot = 10;    
     public float rotSpeed = 0.5f;
     public int shiftSpeed = 10;
-    public int ballForce = 500;
+    public int ballForce = 800;
 
     float resetTime = -1;
     float resetInterval = 15;
@@ -107,11 +107,17 @@ public class Ball : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             Scoreboard.round += 1;
+            Pin.pointPerPin = 2;
         }
     }
 
     public void ActivateSpeedPowerUp()
     {
         BallRB.AddForce(new Vector3(0, 0, 2000));
+    }
+
+    public void ActivateSpeedPowerDown()
+    {
+        BallRB.AddForce(new Vector3(0, 0, -200));
     }
 }

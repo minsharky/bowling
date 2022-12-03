@@ -6,7 +6,7 @@ public class Pin : MonoBehaviour
 {
     private bool scored = false;
     private float pinThreshold = -3.5f;
-    public static int pointPerPin = 1;
+    public static int pointPerPin = 2;
         
     void Update()
     {

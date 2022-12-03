@@ -3,11 +3,15 @@ Project points breakdown:
   - Pins:
     - Object appears on screen: 1 point
     - Object responds to collisions: 1 point
+    - Object makes sound in response to events: 1 point
   - Ball:
     - Object appears on screen: 1 point
     - Object moves: 1 point
     - Object controllable by user: 1 point
     - Object responds to collisions: 1 point
+    - Object makes sound in response to some event (1: ball launch): 1 point
+    - Object makes sound in response to some event (2: barrier hit): 1 point
+    - Object makes sound in response to some event (3: power hit): 1 point
   - Barriers:
     - Object appears on screen: 1 point
   - Angle arrow:
@@ -32,6 +36,9 @@ Project points breakdown:
   - Size decreaser:
     - Object appears on screen: 1 point
     - Object responds to collisions: 1 point
+  - Scoreboard:
+    - Object appears on screen: 1 point
+    - Object changes appearance in response to some event: 1 point
 - Controls:
   - Arrow key press: 1 point
   - Spacebar press: 1 point

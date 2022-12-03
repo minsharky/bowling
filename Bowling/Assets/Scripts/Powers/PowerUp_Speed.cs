@@ -5,7 +5,6 @@ using UnityEngine;
 public class PowerUp_Speed : MonoBehaviour
 {
     Ball ball;
-
     private void Start()
     {   
         ball = FindObjectOfType<Ball>();

@@ -8,7 +8,6 @@ public class Pin : MonoBehaviour
     private float pinThreshold = -3.5f;
     public static int pointPerPin = 2;
     public AudioSource sound;
-  
     void Update()
     {
         if (transform.position.y < pinThreshold && !scored)

@@ -44,10 +44,12 @@ public class Scoreboard : MonoBehaviour
         if (Score >= GameWinScore)
         {
             GameWin();
+            win.Play();
         }
         else if (round >= 5)
         {
             GameOver();
+            lose.Play();
         }
         else
         {

@@ -5,8 +5,6 @@ using UnityEngine;
 public class PowerDown_SpeedDown : MonoBehaviour
 {
     Ball ball;
-    public AudioSource sound;
-
     private void Start()
     {
         ball = FindObjectOfType<Ball>();
@@ -16,7 +14,6 @@ public class PowerDown_SpeedDown : MonoBehaviour
     {
         if (other.gameObject.GetComponent<Ball>() != null)
         {
-            sound.Play();
             ball.ActivateSpeedPowerDown();
             Destroy(gameObject);
 

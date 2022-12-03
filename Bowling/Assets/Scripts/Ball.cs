@@ -19,6 +19,13 @@ public class Ball : MonoBehaviour
     public AudioSource ballBowled;
     public AudioSource barrier;
 
+    public AudioSource downScore;
+    public AudioSource downSize;
+    public AudioSource downSpeed;
+    public AudioSource upScore;
+    public AudioSource upSize;
+    public AudioSource upSpeed;
+
     EventHandler eh;
 
     // Start is called before the first frame update
@@ -99,6 +106,34 @@ public class Ball : MonoBehaviour
     {
         if (collision.gameObject.tag == "Bumper") {
             barrier.Play();
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.GetComponent<PowerDown_ScoreDiv>() != null)
+        {
+            downScore.Play();
+        }
+        if (other.gameObject.GetComponent<PowerDown_SpeedDown>() != null)
+        {
+            downSpeed.Play();
+        }
+        if (other.gameObject.GetComponent<PowerDown_GetSmaller>() != null)
+        {
+            downSize.Play();
+        }
+        if (other.gameObject.GetComponent<PowerUp_GetBigger>() != null)
+        {
+            upSize.Play();
+        }
+        if (other.gameObject.GetComponent<PowerUp_ScoreMult>() != null)
+        {
+            upScore.Play();
+        }
+        if (other.gameObject.GetComponent<PowerUp_Speed>() != null)
+        {
+            upSpeed.Play();
         }
     }
 

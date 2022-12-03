@@ -54,7 +54,7 @@ Lose conditions
 Timer that caps how long the user can play
 Powerups
 Powerdowns
-Implemented "r" reset button.
+Rachel implemented "r" reset button.
 
 11/29: 1:00 PM
 Minseo created the "pins" prefab.

@@ -80,3 +80,6 @@ Makes ball bigger/small when contacts ball, respectively.
 
 12/2 6:52 PM
 David finished prefabs/color schemes for all powerups.
+
+12/2 7:23 PM
+Akash and David finished all powerup/powerdown scripts.

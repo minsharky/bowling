@@ -83,3 +83,6 @@ David finished prefabs/color schemes for all powerups.
 
 12/2 7:23 PM
 Akash and David finished all powerup/powerdown scripts.
+
+12/2 7:48 PM
+Akash finished EventHandler/powers' position randomization stuff.

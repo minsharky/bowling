@@ -6,6 +6,8 @@ using UnityEngine;
 public class Scoreboard : MonoBehaviour
 {
     public static Scoreboard Singleton;
+    public AudioSource win;
+    public AudioSource lose;
             
     public static void ScorePoints(int points)
     {
@@ -57,6 +59,7 @@ public class Scoreboard : MonoBehaviour
     {
         Time.timeScale = 0;
         scoreDisplay.text = "You Lose / OOPS";
+
     }
 
     private void GameWinInternal()

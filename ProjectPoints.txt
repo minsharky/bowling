@@ -43,10 +43,11 @@ Project points breakdown:
   - Arrow key press: 1 point
   - Spacebar press: 1 point
   - A/D press: 1 point
-- Other: (30 points total)
+- Other: (31 points total)
   - 3D game: 25 points
   - Start menu: 5 points
+  - Dynamic spawning of objects (powers): 1 point
   
-TOTAL POINTS: 61
+TOTAL POINTS: 62
 POINT GOAL: 70
-POINTS REMAINING: 9
+POINTS REMAINING: 8

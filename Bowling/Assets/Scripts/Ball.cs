@@ -16,12 +16,15 @@ public class Ball : MonoBehaviour
     float resetTime = -1;
     float resetInterval = 15;
 
+    EventHandler eh;
+
 
     // Start is called before the first frame update
     void Start()
     {
         BallRB = GetComponent<Rigidbody>();
         launched = false;
+        eh = FindObjectOfType<EventHandler>();
     }
 
     // Update is called once per frame
@@ -106,6 +109,7 @@ public class Ball : MonoBehaviour
         if (launched)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            eh.renew();
             Scoreboard.round += 1;
             Pin.pointPerPin = 2;
         }

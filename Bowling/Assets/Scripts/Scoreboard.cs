@@ -31,7 +31,7 @@ public class Scoreboard : MonoBehaviour
     {
         Singleton = this;
         scoreDisplay = GetComponent<TMP_Text>();
-        GameWinScore = 20;
+        GameWinScore = 40;
         // Initialize the display
         ScorePointsInternal(0);
     }

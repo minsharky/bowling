@@ -6,7 +6,7 @@ public class AngleArrow : MonoBehaviour
 {
     // Start is called before the first frame update
     private Ball ball;
-    void Start()
+    void Start()    
     {
         ball = transform.parent.gameObject.GetComponent<Ball>();
     }

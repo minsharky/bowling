@@ -66,9 +66,17 @@ Win condition: If you exceed a certain score in a certain number of rounds, you 
 Lose condition: If you fail to exceed the score in the number of rounds, you lose. 
 
 12/2: 3:13 PM
-David made AngleArrow work
+David implemented Angle Arrow:
 
 Created cube that follows rotation/movement of Ball pre-launch and disappears upon launch
 
 12/2 4:16 PM
-Minseo wrote the Score Mulitplier Power Up Script and created the Power Up prefab.
+Minseo wrote the Score Multiplier Power Up Script and created the Power Up prefab.
+
+12/2 4:32 PM
+David implemented PowerUp_GetBigger and PowerDown_GetSmaller scripts:
+
+Makes ball bigger/small when contacts ball, respectively.
+
+12/2 6:52 PM
+David finished prefabs/color schemes for all powerups.

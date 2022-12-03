@@ -7,7 +7,7 @@ public class Pin : MonoBehaviour
     private bool scored = false;
     private float pinThreshold = -3.5f;
     public static int pointPerPin = 1;
-    
+        
     void Update()
     {
         if (transform.position.y < pinThreshold && !scored)

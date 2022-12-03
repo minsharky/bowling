@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Ball : MonoBehaviour
 {
-    Rigidbody BallRB;
+    Rigidbody BallRB;   
     public bool launched;
     private int maxRot = 10;    
     public float rotSpeed = 0.5f;

@@ -90,3 +90,6 @@ Akash finished EventHandler/powers' position randomization stuff.
 
 12/3 1:52 PM
 Rachel created the Title Screen.
+
+12/3 4:58 PM
+Minseo finished implementing sounds.

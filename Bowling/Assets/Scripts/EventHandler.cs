@@ -30,7 +30,7 @@ public class EventHandler : MonoBehaviour
         powerChangers.Add(5, speedDown);
         powerChangers.Add(6, getSmaller);
 
-        x_pos_slots = new List<int> { -5, 0, 5 };
+        x_pos_slots = new List<int> { -3, 0, 3 };
 
         renew();
     }

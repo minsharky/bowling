@@ -11,7 +11,7 @@ public class Ball : MonoBehaviour
     private int maxRot = 10;    
     public float rotSpeed = 0.5f;
     public int shiftSpeed = 10;
-    public int ballForce = 800;
+    public int ballForce = 1200;
 
     float resetTime = -1;
     float resetInterval = 15;
@@ -63,11 +63,17 @@ public class Ball : MonoBehaviour
             //use A/D to shift ball left/right
             if (leftA)
             {
-                transform.Translate(new Vector3(-shiftSpeed * Time.deltaTime, 0, 0), Space.World);
+                if (transform.position.x > -7.0)
+                {
+                    transform.Translate(new Vector3(-shiftSpeed * Time.deltaTime, 0, 0), Space.World);
+                }
             }
             if (rightD)
             {
-                transform.Translate(new Vector3(shiftSpeed * Time.deltaTime, 0, 0), Space.World);
+                if (transform.position.x < 7.0)
+                {
+                    transform.Translate(new Vector3(shiftSpeed * Time.deltaTime, 0, 0), Space.World);
+                }
             }
             //use spacebar to launch ball forward
             if (space)

@@ -8,7 +8,7 @@ public class PowerUp_ScoreMult : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {           
         if (other.gameObject.GetComponent<Ball>() != null) { 
-            Pin.pointPerPin *= scoreMultiplier;
+            Pin.pointPerPin = scoreMultiplier;
             Destroy(gameObject);
         }
     }

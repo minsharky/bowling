@@ -14,6 +14,24 @@ Project points breakdown:
     - Object appears on screen: 1 point
     - Object moves: 1 point
     - Object controllable by user: 1 point
+  - Speed powerup:
+    - Object appears on screen: 1 point
+    - Object responds to collisions: 1 point
+  - Score multiplier:
+    - Object appears on screen: 1 point
+    - Object responds to collisions: 1 point
+  - Size powerup:
+    - Object appears on screen: 1 point
+    - Object responds to collisions: 1 point
+  - Speed powerdown:
+    - Object appears on screen: 1 point
+    - Object responds to collisions: 1 point
+  - Score demultiplier:
+    - Object appears on screen: 1 point
+    - Object responds to collisions: 1 point
+  - Size decreaser:
+    - Object appears on screen: 1 point
+    - Object responds to collisions: 1 point
 - Controls:
   - Arrow key press: 1 point
   - Spacebar press: 1 point
@@ -21,6 +39,6 @@ Project points breakdown:
 - Other:
   - 3D game: 25 points
   
-TOTAL POINTS: 38
+TOTAL POINTS: 50
 POINT GOAL: 70
-POINTS REMAINING: 32
+POINTS REMAINING: 20

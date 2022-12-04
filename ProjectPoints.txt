@@ -36,7 +36,7 @@ Project points breakdown:
   - Size decreaser: (2 points total)
     - Object appears on screen: 1 point
     - Object responds to collisions: 1 point
-  - Scoreboard: (2 points total)
+  - Scoreboard: (3 points total)
     - Object appears on screen: 1 point
     - Object changes appearance in response to some event: 1 point
     - Object changes appearance in response to some event: 1 point

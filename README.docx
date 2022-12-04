@@ -1,3 +1,24 @@
 # 376-FinalGame
-
-Welcome to our super awesome 3D bowling game! See instructions.txt for... well, instructions, and check out CREDITS.txt to see where we got help/inspiration/other stuff from.
+INSTRUCTIONS
+To start the game: Open the Title Screen scene file, hit the run button, and then click on the Start Game button with your mouse.
+Basic controls:
+- Press the left and right arrow keys to angle the ball (prior to launch).
+- Press the A/D keys to shift the ball left and right respectively (prior to launch).
+- Press spacebar to launch the ball; after this point, the ball can no longer be controlled.
+Guide to our objects (on main game scene):
+- Ball
+  - This object is visible on launch, and controlled by the player.
+  - This object can collide with the barriers, bouncing off.
+  - This object can collide with one of several kinds of power items, recieving a subsequent boost or hindrance.
+  - This object can knock down the pins .
+- Barriers
+  - These are static objects visible on launch meant to keep the ball within the alley.
+- Pins
+  - There are ten pins visible on launch which can be knocked down by the ball, causing the score to increase.
+- Powers
+  - These items are randomly spawned on launch and reset; visible on screen.
+  - There are six types of power items: Speed boost, size up, score multiplier, and their reverses: speed slow, size down, score de-multiplier.
+  - The related power is applied to the ball upon collision.
+End Game Conditions:
+- Win:
+- Loss:

@@ -9,10 +9,10 @@ Basic controls:
   - Note: after the ball has been launched and physics has started to settle, the scene will reset to commence your next attempt. This can take a few seconds, so just wait and watch. Your points will be retained across attempts, for a total of 3 attempts.
 
 End Game Conditions:
-- Win: Gain 25 or more points in three attempts.
-- Loss: Gain 5 or less points in three attempts.
+- Win: Gain 40 or more points before the fifth attempt.
+- Loss: Gain less than 40 points in five attempts.
 
-Guide to our objects (on main game scene):
+Guide to our essential objects (on main game scene):
 - Ball
   - This object is visible on launch, and controlled by the player.
   - This object can collide with the barriers, bouncing off.
@@ -26,4 +26,7 @@ Guide to our objects (on main game scene):
   - These items are randomly spawned on launch and reset; visible on screen.
   - There are six types of power items: Speed boost, size up, score multiplier, and their reverses: speed slow, size down, score de-multiplier.
   - The related power is applied to the ball upon collision.
+- Scoreboard
+  - This item is text visible in the middle left of the screen
+  - This reflects score increments with each pin hit
   

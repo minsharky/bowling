@@ -89,7 +89,30 @@ Akash and David finished all powerup/powerdown scripts.
 Akash finished EventHandler/powers' position randomization stuff.
 
 12/3 1:52 PM
-Rachel created the Title Screen.
+Rachel created the Title Screen and added background music.
 
 12/3 4:58 PM
-Minseo finished implementing sounds.
+Minseo finished implementing event sounds.
+Minseo re-organized sounds across different objects.
+
+POSTMORTEM
+Summarize what you originally set out to do
+- We originally set out to create a simple 3D bowling simulator, with the aesthetic goals of challenge and submission.
+- We had dreams of gutters and bumpers that could be enabled/disabled, as well as camera movement
+Summarize what your goals ended up being by the end
+- By the end, we had roughly the same goals, but with a heavier emphasis on the powerup/down mechanics and a simpler overall implementation
+- We abandoned the goal of gutters
+- We wanted a variety of powerups and powerdowns to change the gameplay
+Summarize what you accomplished of those goals
+- We did accomplish powerups/downs
+- We did accomplish the basic bowling mechanics
+What went right?
+- We were able to create a basic scene quickly which allowed us time to focus on the powerups/downs
+- We were able to divide responsibilities to allow several people to work on different things at once
+What went wrong?
+- GitHub slowed us down and created many merge conflicts
+What do you wish you knew at the start of the project that you know now?
+- We wish we had known about the complexities of using GitHub for project sharing
+What did you learn in the process?
+- We learned the basics of Unity 3D programming
+- We learned about menu screens and 3D physics
